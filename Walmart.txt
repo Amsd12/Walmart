@@ -1,0 +1,11 @@
+This dataset had 50,000 rows of customer purchases. I wanted to look at the difference in revenue between Discounts Applied Vs No Discount Applied.
+
+Overall There was not a large difference between total Revenue between Discount & No Discount (£6,384,787.35 Vs £6,391,824.13).
+
+When Looking at the difference by splitting the purchases into categories (Electronics, Clothing, Beauty & Home) I began to see some more insights. Clothing & Beauty created more Revenue when Discount was applied, while Home created more Revenue when No Discount was applied. This suggests that in the home category, where items may be a necessity then discounts don't influence customer purchase behaviour.
+
+To determine this I used a COUNTIFS Formula:
+
+=COUNTIFS(Table1[Category],Formulas!B11,Table1[Discount_Applied],Formulas!C10)
+
+The above SUMIFS/COUNTIFS method can be used to look at the categories in more detail such as Smartphone, T-Shirt, Perfume etc...). This will show insights into different products and how Discounts influenced customer purchase behaviour.
